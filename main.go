@@ -20,6 +20,12 @@ func init() {
 
 func main() {
 	r := gin.Default()
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Welcome to Golang Task",
+		})
+	})
+	
 	r.POST("/signup", controllers.SignUp)
 	r.POST("/login", controllers.Login)
 	r.POST("/addDetails", middleware.RequireAuth, controllers.AddDetails)
