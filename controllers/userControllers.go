@@ -117,8 +117,34 @@ func Login(c *gin.Context) {
 	})
 }
 
-func Validate(c *gin.Context) {
+func AddDetails(c *gin.Context) {
+	// get email/password from request body
+	var body struct {
+		Email string
+		Name string
+		Phone string
+		Age int
+	}
+
+	if c.Bind(&body) != nil {
+		c.JSON(http.StatusBadRequest, gin.H{
+			"error": "Fields are empty",
+		})
+		return	
+	}
+
+	// find user by email
+	var user models.User
+	initializers.DB.First(&user, "email = ?", body.Email)
+
+	// update user
+	user.Name = body.Name
+	user.Phone = body.Phone
+	user.Age = body.Age
+	initializers.DB.Save(&user)
+
+	// respond
 	c.JSON(http.StatusOK, gin.H{
-		"message": "Validated successfully",
-	})
+		"message": "Details added successfully",
+	})	
 }

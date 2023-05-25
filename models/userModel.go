@@ -8,5 +8,6 @@ type User struct {
 	Email string `gorm:"unique"`
 	Password string
 	Phone string
+	Age int
 }
 
