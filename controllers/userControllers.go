@@ -67,7 +67,7 @@ func Login(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": "Fields are empty",
 		})
-		return	
+		return
 	}
 
 	// find user by email
@@ -136,6 +136,13 @@ func AddDetails(c *gin.Context) {
 	// find user by email
 	var user models.User
 	initializers.DB.First(&user, "email = ?", body.Email)
+
+	if user.ID == 0 {
+		c.JSON(http.StatusBadRequest, gin.H{
+			"error": "User not found",
+		})
+		return
+	}
 
 	// update user
 	user.Name = body.Name
