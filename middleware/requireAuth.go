@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"golang-task/initializers"
-	"golang-task/models"
+	"github.com/whoisaditya/golang-task/initializers"
+	"github.com/whoisaditya/golang-task/models"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"

@@ -1,4 +1,4 @@
-module golang-task
+module github.com/whoisaditya/golang-task
 
 go 1.18
 
