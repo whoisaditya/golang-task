@@ -2,9 +2,9 @@ package main
 
 // Importing packages
 import (
-	"github.com/whoisaditya/golang-task/controllers"
-	"github.com/whoisaditya/golang-task/initializers"
-	"github.com/whoisaditya/golang-task/middleware"
+	"github.com/whoisaditya/golang-task/api/controllers"
+	"github.com/whoisaditya/golang-task/api/initializers"
+	"github.com/whoisaditya/golang-task/api/middleware"
 
 	"github.com/gin-gonic/gin"
 )

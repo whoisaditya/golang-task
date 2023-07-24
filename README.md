@@ -37,7 +37,7 @@ Follow these steps to set up the project locally:
    - Create a `.env` file based on the `.env.example` file and set your environment variables, including database credentials, JWT secret, etc.
 
 4. **Database Setup**:
-   - Set up the required database (e.g., MySQL, PostgreSQL) and update the database credentials in the `.env` file.
+   - Set up the required PostgreSQL database and update the database credentials in the `.env` file.
 
 5. **Run the Application**:
    ```
@@ -78,6 +78,9 @@ Follow these steps to set up the project locally:
 
 ## Documentation
 Refer to the [postman documentation](https://documenter.getpostman.com/view/16151723/2s93m7V1VV)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <p align="center">
 	With :heart: by <a href="https://github.com/whoisaditya" target="_blank">Aditya Mitra</a>
