@@ -14,7 +14,6 @@ This is a Golang-based REST API project that provides user authentication using 
 
 3. **User Data Storage** (`/addDetails`):
    - Authenticated route that allows users to add their personal details.
-   - Accepts user data including images and PDF files and stores them.
 
 4. **Health Check** (`/`):
    - Simple endpoint to check if the backend server is up and running.
@@ -68,7 +67,7 @@ Follow these steps to set up the project locally:
 4. **User Data Storage**:
    - `POST /addDetails`
    - Request Headers: `{ "Authorization": "Bearer YOUR_JWT_TOKEN" }`
-   - Request Body: Accepts various user details, including images and PDF files.
+   - Request Body: Accepts various user details.
    - Stores the provided user data for the authenticated user.
 
 ## Security Considerations
