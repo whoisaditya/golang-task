@@ -76,20 +76,6 @@ Follow these steps to set up the project locally:
 - The API uses JWT for authentication, ensuring that only authenticated users can access the `/addDetails` route.
 - Passwords are securely hashed before storing them in the database to protect user information.
 
-## Contributing
-
-If you would like to contribute to this project, you can follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with clear commit messages.
-4. Push your changes to your forked repository.
-5. Submit a pull request to the `main` branch of this repository.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Documentation
 Refer to the [postman documentation](https://documenter.getpostman.com/view/16151723/2s93m7V1VV)
 
